@@ -24,6 +24,7 @@ def write_output_to_file(transcript, name='output.txt'):
 
 def main():
     openai.api_key = input("Please provide an API key: ")
+    # For example: audio1.m4a
     audio_name = input("Please provide the audio name: ")
     name, output = convert_sound_to_text(audio_name)
     write_output_to_file(output, name)
